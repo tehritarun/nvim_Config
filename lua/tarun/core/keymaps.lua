@@ -68,3 +68,9 @@ keymap("v", "p", '"_dP', opts)
 -- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
+-- Diagnostic keymaps
+keymap('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
+keymap('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
+keymap('n', '<leader>d', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
+keymap('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
+

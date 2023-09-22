@@ -8,7 +8,4 @@ return {
 
   --[[ for multiple selection ]]
   'mg979/vim-visual-multi',
-
-  --[[ for gc to comment ]]
-  'numToStr/Comment.nvim',
 }
