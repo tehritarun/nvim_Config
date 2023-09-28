@@ -40,7 +40,7 @@ keymap("n", "<A-j>", ":m .+1<CR>==", opts)
 keymap("n", "<A-k>", ":m .-2<CR>==", opts)
 
 -- Insert --
--- Press jk fast to exit insert mode 
+-- Press jk fast to exit insert mode
 keymap("i", "jk", "<ESC>", opts)
 keymap("i", "kj", "<ESC>", opts)
 
@@ -74,6 +74,6 @@ keymap('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic mess
 keymap('n', '<leader>d', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
 keymap('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
 
-keymap('n', '<leader>wo', ":w<CR>", { desc = 'Write file' })
+keymap('n', '<leader>ww', ":w<CR>", { desc = 'Write file' })
 keymap('n', '<leader>wf', ":lua vim.lsp.buf.format()<CR>:w<CR>", { desc = 'Write and Format file' })
 keymap('n', '<S-t>', ":vsplit<CR>:terminal<CR>i", { desc = 'Write/Save file' })
